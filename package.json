@@ -21,6 +21,7 @@
     "node": "8.x"
   },
   "dependencies": {
-    "botkit": "^4.6.1"
+    "botkit": "^4.6.1",
+    "dotenv": "^8.2.0"
   }
 }
