@@ -1,0 +1,26 @@
+{
+  "name": "slackbot",
+  "version": "1.0.0",
+  "description": "Slackbot test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratsilva/slackBot.git"
+  },
+  "author": "Ricardo Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ratsilva/slackBot/issues"
+  },
+  "homepage": "https://github.com/ratsilva/slackBot#readme",
+  "engines": {
+    "node": "8.x"
+  },
+  "dependencies": {
+    "botkit": "^4.6.1"
+  }
+}
