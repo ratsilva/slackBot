@@ -40,7 +40,7 @@ controller.setupWebserver(process.env.PORT, function(err, webserver){
    });
 });
 
-controller.hears('hi', 'direct_message', function(bot, message) {
+controller.hears('hi', 'direct_message,direct_mention,mention', function(bot, message) {
  bot.reply(message,'Hello!');
 });
 
