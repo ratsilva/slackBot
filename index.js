@@ -1,4 +1,5 @@
 var Botkit = require('botkit');
+var https = require("https");
 require('dotenv').config();
 
 if (!process.env.CLIENT_ID || !process.env.CLIENT_SECRET || !process.env.PORT || !process.env.VERIFICATION_TOKEN) {
@@ -54,3 +55,7 @@ controller.on('slash_command', function(bot, message) {
    bot.reply(message, 'Did not recognize that command, sorry!')
  }
 });
+
+setInterval(function() {
+    https.get("https://slackbot-ricardo.herokuapp.com");
+}, 300000); // 5 minutes
