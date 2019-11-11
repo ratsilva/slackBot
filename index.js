@@ -25,7 +25,6 @@ var bot = controller.spawn({
 }).startRTM();
 
 controller.setupWebserver(process.env.PORT, function(err, webserver){
- controller.createWebhookEndpoints(controller.webserver);
  controller.createOauthEndpoints(controller.webserver, 
    function(err, req, res) {
      if (err) {
